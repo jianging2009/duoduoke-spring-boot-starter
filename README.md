@@ -4,6 +4,7 @@
 支持多多客商品、订单等api
 
 使用：
+
 （1）对于springboot项目，只需要导入包并新增yaml/properties配置
 ```
 #client id 必需
