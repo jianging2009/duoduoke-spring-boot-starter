@@ -17,7 +17,7 @@ duoduoke.api.connection-timeout-millis=300
 duoduoke.api.connection-request-timeout=300
 #自定义client 需要实现com.holyw.duoduoke.client.IClient接口
 #可以支持不走配置 从数据库、redis、配置中心等读取以上配置实现 非必需
-duoduoke.api.client-class-name=com.holyw.client.MyDuoduokeClient
+#duoduoke.api.client-class-name=com.holyw.client.MyDuoduokeClient
 ```
 （2）注入duoduokeGoodsTemplate就可以方便的使用
 ```java
