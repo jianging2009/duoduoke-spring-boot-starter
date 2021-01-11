@@ -33,3 +33,9 @@ public class Application {
 }
 
 ```
+
+需要完善：
+
+（1）自定义DefaultDuoduokeClient，失效支持redis、数据库、配置中心配置clientId clientSecret
+
+（2）...
