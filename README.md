@@ -39,3 +39,5 @@ public class Application {
 （1）自定义DefaultDuoduokeClient，失效支持redis、数据库、配置中心配置clientId clientSecret
 
 （2）...
+
+交流QQ：675424581
