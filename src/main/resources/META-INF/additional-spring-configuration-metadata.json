@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "duoduoke.api.client.id",
+      "name": "duoduoke.api.clientId",
       "type": "java.lang.String",
       "description": "多多客clientId",
       "defaultValue": "1"
     },
     {
-      "name": "duoduoke.api.client.secret",
+      "name": "duoduoke.api.clientSecret",
       "type": "java.lang.String",
       "description": "多多客clientSecret",
       "defaultValue": "1"
@@ -25,7 +25,7 @@
       "defaultValue": "300"
     },
     {
-      "name": "duoduoke.api.client.classname",
+      "name": "duoduoke.api.clientClassName",
       "type": "java.lang.String",
       "description": "多多客client请求超时时间",
       "defaultValue": "300"
