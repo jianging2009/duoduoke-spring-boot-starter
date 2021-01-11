@@ -9,3 +9,23 @@
 
 @Autowired
 private DuoduokeGoodsTemplate duoduokeGoodsTemplate;
+
+测试代码：
+
+@SpringBootApplication
+
+public class Application {
+
+    public static void main(String[] args) {
+    
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
+
+        DuoduokeGoodsTemplate duoduokeGoodsTemplate = applicationContext.getBean(DuoduokeGoodsTemplate.class);
+        
+        GoodsVO goodsDetail = duoduokeGoodsTemplate.getGoodsDetail(new PddDdkGoodsDetailRequestBuilder().addGoodsId("79993177108").build());
+
+        System.out.println(goodsDetail);
+
+    }
+
+}
