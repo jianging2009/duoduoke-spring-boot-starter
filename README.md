@@ -12,8 +12,12 @@ private DuoduokeGoodsTemplate duoduokeGoodsTemplate;
 
 测试代码：
 
+```
+
 @SpringBootApplication
+
 public class Application {
+
     public static void main(String[] args) {
     
         ConfigurableApplicationContext applicationContext = SpringApplication.run(Application.class, args);
@@ -27,3 +31,5 @@ public class Application {
     }
 
 }
+
+```
