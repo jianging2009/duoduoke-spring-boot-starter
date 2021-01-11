@@ -50,12 +50,12 @@ public class MyDuoduokeClient implements IClient {
     private String getClientIdFromDB() {
         //redisTemplate.opsForValue().get("");
         //configMapper.getDuoduokeConfig("")
-        return "0d3d7587e69c49b0a00d50aa4542237e";
+        return "xxxxxxxxxx";
     }
     private String getClientSecretFromDB() {
         //redisTemplate.opsForValue().get("");
         //configMapper.getDuoduokeConfig("")
-        return "56568e23184a4084c223434d95c7c1dd01a3cf61";
+        return "xxxxxxxxxx";
     }
 }
 ```
