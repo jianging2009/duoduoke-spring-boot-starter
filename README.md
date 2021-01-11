@@ -13,11 +13,11 @@ duoduoke.api.client-id="your client id"
 duoduoke.api.client-secret="you client secret"
 #client超时时间 非必需
 duoduoke.api.connection-timeout-millis=300
-#request请求超时时间非必需
+#request请求超时时间 非必需
 duoduoke.api.connection-request-timeout=300
 #自定义client 需要实现com.holyw.duoduoke.client.IClient接口
 #可以支持不走配置 从数据库、redis、配置中心等读取以上配置实现 非必需
-duoduoke.api.client-class-name=com.holyw.client.MyDuoduokeCient
+duoduoke.api.client-class-name=com.holyw.client.MyDuoduokeClient
 ```
 （2）注入duoduokeGoodsTemplate就可以方便的使用
 ```java
@@ -36,10 +36,28 @@ public class Application {
     }
 }
 ```
-需要完善：
+自定义Client实现：
+```java
+public class MyDuoduokeClient implements IClient {
+    @Override
+    public PopClient getDefaultClient() {
+        HttpClientConfig httpClientConfig = new HttpClientConfig();
+        httpClientConfig.setConnectionTimeoutMillis(300);
+        httpClientConfig.setConnectionRequestTimeout(300);
+        return new PopHttpClient(getClientIdFromDB(), getClientSecretFromDB(), httpClientConfig);
+    }
 
-（1）自定义DefaultDuoduokeClient，失效支持redis、数据库、配置中心配置clientId clientSecret
-
-（2）...
+    private String getClientIdFromDB() {
+        //redisTemplate.opsForValue().get("");
+        //configMapper.getDuoduokeConfig("")
+        return "0d3d7587e69c49b0a00d50aa4542237e";
+    }
+    private String getClientSecretFromDB() {
+        //redisTemplate.opsForValue().get("");
+        //configMapper.getDuoduokeConfig("")
+        return "56568e23184a4084c223434d95c7c1dd01a3cf61";
+    }
+}
+```
 
 交流QQ：675424581
