@@ -1,7 +1,5 @@
 package com.holyw.duoduoke.vo;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -13,8 +11,6 @@ import java.util.List;
  * 通用的GoodsVO
  */
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonIgnoreProperties
 public class GoodsVO {
     private String id;
     private String goodsId; //产品ID-SKU-ID

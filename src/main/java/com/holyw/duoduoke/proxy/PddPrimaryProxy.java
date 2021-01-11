@@ -1,6 +1,6 @@
 package com.holyw.duoduoke.proxy;
 
-import com.holyw.duoduoke.client.DefaultDuoduokeClient;
+import com.holyw.duoduoke.client.IClient;
 import com.pdd.pop.sdk.http.PopBaseHttpRequest;
 
 import java.lang.reflect.InvocationHandler;
@@ -11,10 +11,10 @@ import java.lang.reflect.Proxy;
 public class PddPrimaryProxy implements InvocationHandler {
 
 
-    DefaultDuoduokeClient defaultDuoduokeClient;
+    IClient client;
 
-    public PddPrimaryProxy(DefaultDuoduokeClient defaultDuoduokeClient) {
-        this.defaultDuoduokeClient = defaultDuoduokeClient;
+    public PddPrimaryProxy(IClient client) {
+        this.client = client;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class PddPrimaryProxy implements InvocationHandler {
             return "DuoduokeSupportRepository";
         }
         try {
-            return defaultDuoduokeClient.getDefaultClient().syncInvoke((PopBaseHttpRequest) args[0]);
+            return client.getDefaultClient().syncInvoke((PopBaseHttpRequest) args[0]);
         } catch (NullPointerException e) {
         }
         return null;
