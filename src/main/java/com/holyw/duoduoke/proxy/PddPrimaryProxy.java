@@ -1,6 +1,7 @@
 package com.holyw.duoduoke.proxy;
 
 import com.holyw.duoduoke.client.IClient;
+import com.holyw.duoduoke.support.DuoduokeSupportRepository;
 import com.pdd.pop.sdk.http.PopBaseHttpRequest;
 
 import java.lang.reflect.InvocationHandler;
@@ -19,8 +20,11 @@ public class PddPrimaryProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        if (null == args) {
-            return "DuoduokeSupportRepository";
+        if (method.getName().equals("hashCode")) {
+            return 0;
+        }
+        if (method.getName().equals("toString")) {
+            return DuoduokeSupportRepository.class.getName();
         }
         try {
             return client.getDefaultClient().syncInvoke((PopBaseHttpRequest) args[0]);
