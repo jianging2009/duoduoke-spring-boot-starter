@@ -2,8 +2,8 @@ package com.holyw.duoduoke.config;
 
 import com.holyw.duoduoke.client.DefaultDuoduokeClient;
 import com.holyw.duoduoke.client.IClient;
-import com.holyw.duoduoke.core.DuoduokeGoodsTemplate;
-import com.holyw.duoduoke.core.DuoduokeOrderTemplate;
+import com.holyw.duoduoke.template.DuoduokeGoodsTemplate;
+import com.holyw.duoduoke.template.DuoduokeOrderTemplate;
 import com.holyw.duoduoke.exception.DuoduokeClientNotFoundException;
 import com.holyw.duoduoke.proxy.PddPrimaryProxy;
 import com.holyw.duoduoke.support.DuoduokeSupportRepository;

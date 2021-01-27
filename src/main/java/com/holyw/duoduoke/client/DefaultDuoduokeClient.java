@@ -8,7 +8,7 @@ import com.pdd.pop.sdk.http.PopHttpClient;
 /**
  * DenchyChiang
  */
-public class DefaultDuoduokeClient implements IClient {
+public class DefaultDuoduokeClient implements IDuoduokeClient {
 
     private DuoduokePropeties duoduokePropeties;
 

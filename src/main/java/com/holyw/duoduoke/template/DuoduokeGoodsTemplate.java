@@ -1,4 +1,4 @@
-package com.holyw.duoduoke.core;
+package com.holyw.duoduoke.template;
 
 import com.alibaba.fastjson.JSONObject;
 import com.holyw.duoduoke.request.builder.PddDdkGoodsUnitQueryRequestBuilder;
@@ -9,17 +9,13 @@ import com.holyw.duoduoke.vo.GoodsVO;
 import com.pdd.pop.sdk.http.api.pop.request.PddDdkGoodsDetailRequest;
 import com.pdd.pop.sdk.http.api.pop.response.PddDdkGoodsDetailResponse;
 import com.pdd.pop.sdk.http.api.pop.response.PddDdkGoodsUnitQueryResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
 
 
-@Service
 public class DuoduokeGoodsTemplate {
 
-    //@Autowired
     private DuoduokeSupportRepository duoduokeSupportRepository;
 
     public DuoduokeGoodsTemplate(DuoduokeSupportRepository duoduokeSupportRepository) {
