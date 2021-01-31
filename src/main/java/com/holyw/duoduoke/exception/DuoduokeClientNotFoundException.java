@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 /**
  * @className: DuoduokeClientNotFoundException
  * @description: TODO
- * @author: Denchy Chiang
  * @date: 2021/1/11
  **/
 public class DuoduokeClientNotFoundException extends Exception {

@@ -6,7 +6,6 @@ import com.pdd.pop.sdk.http.api.pop.request.PddDdkGoodsDetailRequest;
 import java.util.Arrays;
 
 /**
- * Denchy Chiang
  */
 public class PddDdkGoodsDetailRequestBuilder implements PddBaseRequestBuilder {
 

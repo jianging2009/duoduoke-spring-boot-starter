@@ -5,7 +5,6 @@ import com.pdd.pop.sdk.http.api.pop.request.PddDdkOrderListIncrementGetRequest;
 /**
  * @className: PddDdkOrderListIncrementGetRequestBuilder
  * @description: TODO
- * @author: Denchy Chiang
  * @date: 2021/1/27
  **/
 public class PddDdkOrderListIncrementGetRequestBuilder {

@@ -5,7 +5,6 @@ import com.pdd.pop.sdk.http.api.pop.request.PddDdkGoodsBasicInfoGetRequest;
 import java.util.List;
 
 /**
- * Denchy Chiang
  */
 public class PddDdkGoodsBasicInfoGetRequestBuilder {
     private PddDdkGoodsBasicInfoGetRequest pddDdkGoodsBasicInfoGetRequest = new PddDdkGoodsBasicInfoGetRequest();

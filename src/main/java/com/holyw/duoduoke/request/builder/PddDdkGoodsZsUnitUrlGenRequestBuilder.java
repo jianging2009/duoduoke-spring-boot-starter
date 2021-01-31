@@ -4,7 +4,6 @@ package com.holyw.duoduoke.request.builder;
 import com.pdd.pop.sdk.http.api.pop.request.PddDdkGoodsZsUnitUrlGenRequest;
 
 /**
- * Denchy Chiang
  */
 public class PddDdkGoodsZsUnitUrlGenRequestBuilder implements PddBaseRequestBuilder {
 

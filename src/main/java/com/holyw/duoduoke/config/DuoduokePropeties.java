@@ -5,7 +5,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * @className: DuoduokePropeties
  * @description: TODO
- * @author: Denchy Chiang
  * @date: 2021/1/11
  **/
 @ConfigurationProperties(
