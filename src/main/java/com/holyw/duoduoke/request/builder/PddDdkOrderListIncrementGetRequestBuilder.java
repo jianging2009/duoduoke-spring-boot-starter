@@ -30,7 +30,7 @@ public class PddDdkOrderListIncrementGetRequestBuilder {
     }
 
     public PddDdkOrderListIncrementGetRequestBuilder addPage(Integer page) {
-        request.setPageSize(page);
+        request.setPage(page);
         return this;
     }
 
